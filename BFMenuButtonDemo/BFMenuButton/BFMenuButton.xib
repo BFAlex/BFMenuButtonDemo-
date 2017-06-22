@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BFMenuButton">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKh-Pz-rmh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <connections>
+                        <action selector="clickMenuBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="XKz-BW-rpf"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnImage" translatesAutoresizingMaskIntoConstraints="NO" id="tMP-KR-Nr5">
+                    <rect key="frame" x="330" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="SR0-f5-wVS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F02-Fe-ib3">
+                    <rect key="frame" x="8" y="5" width="322" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tMP-KR-Nr5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="5pw-EP-1Lf"/>
+                <constraint firstItem="tMP-KR-Nr5" firstAttribute="leading" secondItem="F02-Fe-ib3" secondAttribute="trailing" id="Bo5-sK-TVY"/>
+                <constraint firstItem="UKh-Pz-rmh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TQD-SH-6ON"/>
+                <constraint firstItem="F02-Fe-ib3" firstAttribute="bottom" secondItem="tMP-KR-Nr5" secondAttribute="bottom" id="VqE-bR-Nx6"/>
+                <constraint firstItem="tMP-KR-Nr5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y01-vb-Wed"/>
+                <constraint firstItem="UKh-Pz-rmh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yu9-5r-SzS"/>
+                <constraint firstAttribute="bottom" secondItem="UKh-Pz-rmh" secondAttribute="bottom" id="ofM-rP-1LI"/>
+                <constraint firstItem="F02-Fe-ib3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="paW-WJ-ppc"/>
+                <constraint firstItem="F02-Fe-ib3" firstAttribute="top" secondItem="tMP-KR-Nr5" secondAttribute="top" id="t0P-nm-2Sd"/>
+                <constraint firstAttribute="trailing" secondItem="tMP-KR-Nr5" secondAttribute="trailing" constant="5" id="u3R-gj-4mH"/>
+                <constraint firstAttribute="trailing" secondItem="UKh-Pz-rmh" secondAttribute="trailing" id="v22-iJ-dp2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="indicateImg" destination="tMP-KR-Nr5" id="Iao-xQ-gvz"/>
+                <outlet property="indicateImgWidthConstraint" destination="SR0-f5-wVS" id="f5U-Av-aOx"/>
+                <outlet property="menuBtn" destination="UKh-Pz-rmh" id="wY9-Uf-Q5c"/>
+                <outlet property="menuLabel" destination="F02-Fe-ib3" id="ypr-KA-drS"/>
+                <outlet property="topImgConstraint" destination="5pw-EP-1Lf" id="tdi-Wr-zSL"/>
+            </connections>
+            <point key="canvasLocation" x="-48.5" y="9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnImage" width="60" height="60"/>
+    </resources>
+</document>

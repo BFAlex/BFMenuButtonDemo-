@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "BFMenuButton.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIView *menuBtnContainer;
 
 @end
 
@@ -17,12 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    BFMenuButton *menuBtn = [BFMenuButton menuButtonWithFrame:self.menuBtnContainer.bounds andImage:nil];
+    [self.menuBtnContainer addSubview:menuBtn];
 }
 
 

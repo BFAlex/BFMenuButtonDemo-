@@ -15,6 +15,8 @@
 		A84752111EFB50C10025C06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A847520F1EFB50C10025C06B /* LaunchScreen.storyboard */; };
 		A847521C1EFB50C20025C06B /* BFMenuButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A847521B1EFB50C20025C06B /* BFMenuButtonDemoTests.m */; };
 		A84752271EFB50C20025C06B /* BFMenuButtonDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A84752261EFB50C20025C06B /* BFMenuButtonDemoUITests.m */; };
+		A84752361EFB51190025C06B /* BFMenuButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84752351EFB51190025C06B /* BFMenuButton.xib */; };
+		A84752391EFB51370025C06B /* BFMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A84752381EFB51370025C06B /* BFMenuButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		A84752221EFB50C20025C06B /* BFMenuButtonDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFMenuButtonDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84752261EFB50C20025C06B /* BFMenuButtonDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFMenuButtonDemoUITests.m; sourceTree = "<group>"; };
 		A84752281EFB50C20025C06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84752351EFB51190025C06B /* BFMenuButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFMenuButton.xib; sourceTree = "<group>"; };
+		A84752371EFB51370025C06B /* BFMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFMenuButton.h; sourceTree = "<group>"; };
+		A84752381EFB51370025C06B /* BFMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFMenuButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		A84752001EFB50C00025C06B /* BFMenuButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A84752341EFB50E90025C06B /* BFMenuButton */,
 				A84752041EFB50C10025C06B /* AppDelegate.h */,
 				A84752051EFB50C10025C06B /* AppDelegate.m */,
 				A84752071EFB50C10025C06B /* ViewController.h */,
@@ -138,6 +144,16 @@
 				A84752281EFB50C20025C06B /* Info.plist */,
 			);
 			path = BFMenuButtonDemoUITests;
+			sourceTree = "<group>";
+		};
+		A84752341EFB50E90025C06B /* BFMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				A84752351EFB51190025C06B /* BFMenuButton.xib */,
+				A84752371EFB51370025C06B /* BFMenuButton.h */,
+				A84752381EFB51370025C06B /* BFMenuButton.m */,
+			);
+			path = BFMenuButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +267,7 @@
 			files = (
 				A84752111EFB50C10025C06B /* LaunchScreen.storyboard in Resources */,
 				A847520E1EFB50C10025C06B /* Assets.xcassets in Resources */,
+				A84752361EFB51190025C06B /* BFMenuButton.xib in Resources */,
 				A847520C1EFB50C10025C06B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +295,7 @@
 			files = (
 				A84752091EFB50C10025C06B /* ViewController.m in Sources */,
 				A84752061EFB50C10025C06B /* AppDelegate.m in Sources */,
+				A84752391EFB51370025C06B /* BFMenuButton.m in Sources */,
 				A84752031EFB50C10025C06B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J5C844G24;
 				INFOPLIST_FILE = BFMenuButtonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFMenuButtonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J5C844G24;
 				INFOPLIST_FILE = BFMenuButtonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFMenuButtonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
