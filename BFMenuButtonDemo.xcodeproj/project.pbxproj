@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FCF8A5A2599D483004FDDC6 /* IMG_949EE132A27E-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8A592599D483004FDDC6 /* IMG_949EE132A27E-1.jpeg */; };
 		A84752031EFB50C10025C06B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A84752021EFB50C10025C06B /* main.m */; };
 		A84752061EFB50C10025C06B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A84752051EFB50C10025C06B /* AppDelegate.m */; };
 		A84752091EFB50C10025C06B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84752081EFB50C10025C06B /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FCF8A592599D483004FDDC6 /* IMG_949EE132A27E-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_949EE132A27E-1.jpeg"; sourceTree = "<group>"; };
 		A84751FE1EFB50C00025C06B /* BFMenuButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFMenuButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84752021EFB50C10025C06B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A84752041EFB50C10025C06B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FCF8A582599D464004FDDC6 /* ShowResource */ = {
+			isa = PBXGroup;
+			children = (
+				5FCF8A592599D483004FDDC6 /* IMG_949EE132A27E-1.jpeg */,
+			);
+			path = ShowResource;
+			sourceTree = "<group>";
+		};
 		A84751F51EFB50C00025C06B = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		A84752001EFB50C00025C06B /* BFMenuButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5FCF8A582599D464004FDDC6 /* ShowResource */,
 				A84752341EFB50E90025C06B /* BFMenuButton */,
 				A84752041EFB50C10025C06B /* AppDelegate.h */,
 				A84752051EFB50C10025C06B /* AppDelegate.m */,
@@ -245,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,6 +281,7 @@
 				A847520E1EFB50C10025C06B /* Assets.xcassets in Resources */,
 				A84752361EFB51190025C06B /* BFMenuButton.xib in Resources */,
 				A847520C1EFB50C10025C06B /* Main.storyboard in Resources */,
+				5FCF8A5A2599D483004FDDC6 /* IMG_949EE132A27E-1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +549,7 @@
 				A847522D1EFB50C20025C06B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A847522E1EFB50C20025C06B /* Build configuration list for PBXNativeTarget "BFMenuButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +558,7 @@
 				A84752301EFB50C20025C06B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A84752311EFB50C20025C06B /* Build configuration list for PBXNativeTarget "BFMenuButtonDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +567,7 @@
 				A84752331EFB50C20025C06B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
